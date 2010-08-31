@@ -1,14 +1,13 @@
 #!/usr/bin/env python
 # encoding: utf-8
 """
-challenge2.py
+challenge1.py
 http://www.pythonchallenge.com/pc/def/map.html
 
 Created by whimsy on 2010-08-29.
 Copyright (c) 2010 Will Crawford. All rights reserved.
 
-I think the answer is this:
-http://www.pythonchallenge.com/pc/def/ocr.html
+This solution is confirmed to work. An alternative uses string.maketrans.
 """
 
 import sys

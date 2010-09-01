@@ -10,6 +10,7 @@ Copyright (c) 2010 Will Crawford. All rights reserved.
 
 import sys
 import os
+import re
 
 
 def main():

@@ -16,7 +16,7 @@ from string import maketrans, punctuation
 
 
 def main():
-	ocr = file("ocr.txt").read()
+	ocr = file("challenge2.txt").read()
 	symbols = punctuation + "\n"
 	eraser = maketrans("","")
 	print ocr.translate(eraser,symbols)

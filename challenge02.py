@@ -12,9 +12,14 @@ This file references ocr.txt; ensure you grabbed it from the repo.
 
 import sys
 import os
+from string import maketrans, punctuation
 
 
 def main():
+	ocr = file("ocr.txt").read()
+	symbols = punctuation + "\n"
+	eraser = maketrans("","")
+	print ocr.translate(eraser,symbols)
 	return 0
 
 

@@ -15,9 +15,9 @@ import re
 
 def main():
 	equality = file("challenge3.txt").read()
+	sieve = re.compile('[^A-Z][A-Z]{3}([a-z])[A-Z]{3}[^A-Z]')
+	gold = sieve.findall(equality)
+	print "".join(gold)
 	return 0
 
-
-if __name__ == '__main__':
-	main()
-
+if __name__ == '__main__': main()

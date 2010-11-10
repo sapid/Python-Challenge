@@ -7,6 +7,7 @@ pickle:
 http://www.pythonchallenge.com/pc/def/banner.p
 
 Created by whimsy on 2010-08-31.
+Completed on 2010-11-09.
 Copyright (c) 2010 Will Crawford. All rights reserved.
 """
 
@@ -14,19 +15,16 @@ import sys
 import os
 import cPickle as pickle
 
-
-# This feels really hack-ish =\
 def main():
 	print "This program expects banner.p in the same directory."
 	print "It should be named challenge05.p"
-	print "The next challenge word is:"
+	print "The next challenge word is..."
 	the_pickle = pickle.load( open("challenge05.p"))
-#	L = sorted(the_pickle)
-	for element in the_pickle:		
-		for subelement in element:
-			for i in range(subelement[1]):
-				sys.stdout.write(str(subelement[0]));
-		sys.stdout.write('\n')
+	for element in the_pickle:	# Traverse the first set of lists	
+		for subelement in element: # Traverse the lists in the lists
+			for i in range(subelement[1]): # The second tuple element contains repetition information
+				sys.stdout.write(str(subelement[0])); # The first tuple element contains the character to be repeated.
+		sys.stdout.write('\n') # Each element in the_pickle is a separate banner line.
 	return 0
 
 if __name__ == '__main__': main()

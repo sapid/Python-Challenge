@@ -3,9 +3,6 @@
 """
 challenge04.py
 http://www.pythonchallenge.com/pc/def/linkedlist.php
--> Next is 
-http://www.pythonchallenge.com/pc/def/linkedlist.php?nothing=12345
-http://www.pythonchallenge.com/pc/def/linkedlist.php?nothing=92512
 
 Created by whimsy on 2010-08-31.
 Copyright (c) 2010 Will Crawford. All rights reserved.

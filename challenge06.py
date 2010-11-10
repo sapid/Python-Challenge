@@ -17,6 +17,10 @@ import os
 
 def main():
 	print "Thus begins challenge 6!"
+	print "The provided hint is:\n"
+	print "welcome to my zipped list"
+	print "start from 90052"
+	print "answer is inside the zip"
 	return 0
 
 if __name__ == '__main__': main()

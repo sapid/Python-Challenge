@@ -41,8 +41,10 @@ def main():
    pattern = re.compile(r'(\d+)')
    next_file = '90052'
    next_file = next_file + '.txt'
+   comments = ''
    while next_file:
       text = the_zip.read(next_file)
+      comments += the_zip.getinfo(next_file).comment
       next_file = None
       print text
       try:
@@ -53,7 +55,7 @@ def main():
       except AttributeError:
          break
       text = None
-
+   print "\n" + comments
    return 0
 
 if __name__ == '__main__': main()
